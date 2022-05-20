@@ -9,6 +9,11 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
+    background-color: #fff;
+}
+
+.color {
+    background-color: #fff;
 }
 
 div {
