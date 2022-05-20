@@ -36,80 +36,99 @@ var audioL = new Audio("./sounds/tink.wav");
 
 var t;
 
-
 window.addEventListener("keydown", function (event) {
   if (event.key == "q") {
     audioQ.play();
     q.classList.add("select");
-    document.body.style.backgroundColor = "#568259";
+    document.body.classList.add("bgQ");
     this.setTimeout(function () {
       q.classList.remove("select");
+      document.body.classList.remove("bgQ");
+      clearTimeout();
     }, 300);
   } else if (event.key == "s") {
     audioS.play();
     s.classList.add("select");
-    document.body.style.backgroundColor = "#33658a";
+    document.body.classList.add('bgS')
     this.setTimeout(function () {
       s.classList.remove("select");
+      document.body.classList.remove("bgS");
+      clearTimeout();
     }, 300);
   } else if (event.key == "d") {
     audioD.play();
     d.classList.add("select");
-    document.body.style.backgroundColor = "#fd5200";
+    document.body.classList.add('bgD')
     this.setTimeout(function () {
       d.classList.remove("select");
+      document.body.classList.remove("bgD");
+      clearTimeout();
     }, 300);
   } else if (event.key == "f") {
     audioF.play();
     f.classList.add("select");
-    document.body.style.backgroundColor = "#2f4858";
+    document.body.classList.add('bgF')
     this.setTimeout(function () {
       f.classList.remove("select");
+      document.body.classList.remove('bgF')
+      clearTimeout();
     }, 300);
   } else if (event.key == "g") {
     audioG.play();
     g.classList.add("select");
-    document.body.style.backgroundColor = "#f6ae2d"
+    document.body.classList.add('bgG')
     this.setTimeout(function () {
       g.classList.remove("select");
+      document.body.classList.remove('bgG')
+      clearTimeout();
     }, 300);
   } else if (event.key == "h") {
     audioH.play();
     h.classList.add("select");
-    document.body.style.backgroundColor = "#4381c1";
+    document.body.classList.add('bgH')
     this.setTimeout(function () {
       h.classList.remove("select");
+      document.body.classList.remove('bgH')
+      clearTimeout();
     }, 300);
   } else if (event.key == "j") {
     audioJ.play();
     j.classList.add("select");
-    document.body.style.backgroundColor = "#f593e0";
+    document.body.classList.add('bgJ')
     this.setTimeout(function () {
       j.classList.remove("select");
+      document.body.classList.remove('bgJ')
+      clearTimeout();
     }, 300);
   } else if (event.key == "k") {
     audioK.play();
     k.classList.add("select");
-    document.body.style.backgroundColor = "#822e81";
+    document.body.classList.add('bgK')
     this.setTimeout(function () {
       k.classList.remove("select");
+      document.body.classList.remove('bgK')
+      clearTimeout();
     }, 300);
   } else if (event.key == "l") {
     audioL.play();
     l.classList.add("select");
-    document.body.style.backgroundColor = "#8cd790";
+    document.body.classList.add('bgL')
     this.setTimeout(function () {
       l.classList.remove("select");
+      document.body.classList.remove('bgL')
+      clearTimeout();
     }, 300);
   }
 });
 
 q.addEventListener("click", function () {
   audioQ.play();
-  q.classList.add("select");
 
-  this.setTimeout(function () {
-    q.classList.remove("select");
-  }, 1);
+  t.setInterval(function () {
+    if (q.classList.contains("select")) {
+      q.classList.remove("select");
+    } else {
+      q.classList.add("select");
+    }
+  }, 1000);
 });
-

@@ -33,6 +33,36 @@ div p {
     transform: scale(0.7);
 }
 
+.bgQ {
+    background-color: #568259;
+}
+ .bgS {
+    background-color: #33658a;
+ }
+.bgD {
+    background-color: #fd5200;
+}
+.bgF {
+    background-color: #2f4858;
+}
+.bgG {
+    background-color: #f6ae2d;
+}
+.bgH {
+    background-color: #4381c1;
+}
+.bgJ {
+    background-color: #f593e0;
+}
+.bgK {
+    background-color: #822e81;
+}
+.bgL {
+    background-color: #8cd790;
+} 
+
+
+
 @media (max-width: 769px) {
 
     body {
